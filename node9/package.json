@@ -1,0 +1,12 @@
+{
+  "name": "hqh-one",
+  "version": "0.0.2",
+  "description": "求两个数字的和",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "18341269536@163.com",
+  "license": "ISC"
+}

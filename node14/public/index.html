@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/axios/0.19.0/axios.min.js"></script>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <p>我叫{{user.name}}</p>
+        <p>我今年{{user.age}}岁</p>
+        <p>我是{{user.sex}}生</p>
+    </div>
+
+<script>
+
+</script>
+<script>
+    axios.defaults.baseURL = 'http://localhost:3003/';
+    new Vue({
+        el: '#app',
+        data: {
+            user: {}
+        },
+        methods: {
+            async handleGetUser(){
+                try{
+                    const res = await axios.get('user');
+                    this.user = res.data;
+                }catch(err){
+                    console.log(err);
+                }
+            }
+        },
+        created(){
+            this.handleGetUser();
+        }
+    })
+</script>
+</body>
+</html>

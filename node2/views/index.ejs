@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+  </head>
+  <body>
+    <form action="/sms_send" method="post">
+      <p><input type="text" name="tpl_id" value="174563" hidden></p>
+      <p><input type="text" name="key" value="1fdb34b19dbacc512e4824327fab9201" hidden></p>
+      <p>请输入您的手机号：<input type="text" name="phone" autocomplete="off"></p>
+      <input type="submit" value="获取短信验证码">
+    </form>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "hqh-cal",
+  "version": "0.1.6",
+  "description": "计算器功能及介绍",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hqh <476358943@qq.com>",
+  "license": "MIT"
+}
